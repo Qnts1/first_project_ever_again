@@ -1,0 +1,65 @@
+.tags a{
+    text-decoration: none;
+    border: 2px solid rgb(77, 68, 68);
+    border-radius: 7px;
+    background-color: rgb(77, 68, 68);
+    color: white;
+    margin: 15px;
+    padding: 2px;
+font-style: italic;
+font-size: 18pt;
+}
+
+.tags a::before{
+content: "#";
+color: red;
+margin-right: 3px;
+}
+
+.tags a::after{
+    content: "\2714";
+    color: red;
+    margin-left: 1px;
+}
+
+.tags{
+width: max-content;
+margin-top: 35px;
+
+
+}
+.tags::before{
+    content: "";
+    position: absolute;
+    height: 60px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+ 
+ 
+    
+}
+
+.tags::after{
+    content: "";
+    position: absolute;
+    height: 60px;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    
+    
+}
+
+.tags::before, .tags::after{
+top: 20px;
+width: 20px;
+}
+
+
+
+
+
+
+
+
